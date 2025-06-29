@@ -1,0 +1,23 @@
+[project]
+name = "mcp-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "songli", email = "18601038090@163.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "faiss-cpu>=1.11.0",
+    "mcp[cli]>=1.10.1",
+    "openai>=1.93.0",
+]
+
+[project.scripts]
+mcp-rag = "mcp_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.7.16,<0.8"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
