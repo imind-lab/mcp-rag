@@ -14,7 +14,7 @@ class RAGClient:
     def __init__(self):
         self.session = None
         self.transport = None
-        self.client = OpenAI(api_key="novo", base_url="http://127.0.0.1:8000/v1")
+        self.client = OpenAI(api_key="novo", base_url="http://10.10.1.75:8000/v1")
 
         self.tools = None
 
